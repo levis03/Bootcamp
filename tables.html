@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Tables</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        table{
+            width: 60%;
+            margin: auto;/* Centers an element*/
+            font-family: 'Raleway' , sans-serif;
+            border-collapse: collapse;
+            box-shadow: 0 29px 52px rgba(0,0,0,0.40), 0 25px 16px rgba(0,0,0,0.20); /* https://htmlcssfreebies.com/*/
+        }
+
+        thead tr{
+            background-color:#099620 ; /* Green */
+            color: #f5f5f5;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        th{
+            padding: 1rem; /* 1rem = 16px */
+            border-bottom: 2px solid #000;
+        }
+
+        td{
+            padding: 16px;
+            border-bottom: 1px solid #808080;
+        }
+
+        tr {
+            transition: all 0.7s ease;
+        }
+        tr:hover {
+            background-color: #008000;
+            color: #fff;
+        }
+
+        tbody tr:last-child td{
+            border-bottom: 3px solid rgb(9, 9, 9);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- Creating a HTML Table -->
+    <table>
+        <!-- The table tag is used to create an HTML table-->
+
+        <!-- Header Row of the Table -->
+        <thead> <!-- to create the header-->
+            <tr>
+                <th colspan="6"> End of Term Results</th> <!-- colspan - Span across the 6 columns-->
+            </tr>
+            <tr>
+                <th> ID </th>
+                <th> Name </th>
+                <th> Maths </th>
+                <th> English </th>
+                <th> Physics </th>
+                <th> Grade </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- Data Rows and Columns  -->
+            <tr>
+                <td> 1 </td>
+                <td> Levis Wanjiku</td>
+                <td> 98 </td>
+                <td> 89 </td>
+                <td> 78 </td>
+                <td> A </td>
+            </tr>
+
+            <!-- (tr>td*6)*4 -->
+            <tr>
+                <td> 2 </td>
+                <td> Maina Terry</td>
+                <td> 76 </td>
+                <td> 58 </td>
+                <td> 90 </td>
+                <td> B+ </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Edward Kimondo</td>
+                <td>92</td>
+                <td>78</td>
+                <td>66</td>
+                <td>A-</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Lily Awuor</td>
+                <td>56</td>
+                <td>88</td>
+                <td>84</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Judy Nyawira</td>
+                <td>77</td>
+                <td>98</td>
+                <td>90</td>
+                <td>A-</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
