@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Forms </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        form{
+            width: 30%;
+            margin: auto;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            padding: 25px 16px;
+            border-radius: 10px;
+            background-color:darkslategray;
+            color: whitesmoke;
+        }
+
+        input{
+            width: 100%;
+            margin-bottom: 16px;
+            padding: 10px 12px;
+            /* border: none; */
+            border: 1.5px solid #800080;
+            /* border-bottom: 1.5px solid #800080; */
+            box-sizing: border-box; /* makes sure the inputs are within the main element */
+        }
+
+        input:focus{
+            outline: none; /* Removes the default outline*/
+            border: 2px solid #3a013a;
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+            background: #067a06;
+            border: none;
+        }
+
+        button:hover{
+            background:#025002;
+            transition: background 0.5s ease-in;
+        }
+
+        @media screen and (max-width:600px) {
+            form{
+                width: 90%;
+            }
+        }
+
+        @media screen and (601px <= width <= 800px) {
+            form{
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <div>
+            <label for=""> Name </label>
+            <i class="fa fa-user icon"> </i>
+            <input type="text" required minlength="6" placeholder="John Doe">
+        </div>
+
+        <div>
+            <label for=""> Email </label>
+            <i class="fa fa-envelope icon"></i>
+            <input type="email" required placeholder="john.doe@gmail.com">
+        </div>
+         <!-- (div>label+input)*3 -->
+        <div>
+            <label for=""> Date Of Birth </label>
+            <i class="fa fa-calendar icon"></i>
+            <input type="date" min="1990/01/01" max="2023/12/31">
+        </div>
+
+        <div>
+            <label for=""> Password </label>
+            <i class="fa fa-key icon"></i>
+            <input type="password" placeholder="Strong Password">
+        </div>
+        
+        <div>
+            <label for=""> Weight </label>
+            <i class="fa fa-info-circle icon"></i>
+            <input type="number" placeholder="58">
+        </div>
+
+        <button> Submit </button>
+    </form>
+
+</body>
+</html>
